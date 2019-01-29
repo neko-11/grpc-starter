@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.zsf.grpc.eureka.configure.GrpcEurekaConfiguration

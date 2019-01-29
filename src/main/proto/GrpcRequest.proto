@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.demo.grpc.eureka.lib";
+option java_outer_classname = "GrpcProto";
+
+package grpcrequest;
+
+// 定义服务
+service Greeter {
+    // 服务中的方法
+    rpc getRequest (GrpcRequest) returns (GrpcReply) {}
+}
+
+message GrpcRequest {
+    string param = 1;
+}
+
+message GrpcReply {
+    string result = 1;
+}
